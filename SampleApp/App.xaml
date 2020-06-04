@@ -5,7 +5,6 @@
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <!--<ResourceDictionary Source="/Views/Resources/DataTemplates.xaml" />-->
                 <resources:DataTemplates />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
