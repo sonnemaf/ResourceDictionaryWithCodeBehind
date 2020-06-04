@@ -47,7 +47,7 @@ namespace SampleApp.Views.Resources {
 
 ## App.xaml
 An instance of the DataTemplates is created in the MergedDictionary. There is a *xmlns:resources* defined in the Application element.
-```
+```xml
 <Application x:Class="SampleApp.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
