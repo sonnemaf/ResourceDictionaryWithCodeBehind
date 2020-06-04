@@ -1,0 +1,16 @@
+﻿<ResourceDictionary x:Class="SampleApp.Views.Resources.DataTemplates"
+                    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:models="using:SampleApp.Models">
+
+    <DataTemplate x:Key="EmployeeDataTemplate"
+                  x:DataType="models:Employee">
+        <StackPanel Padding="4"
+                    Spacing="8">
+            <TextBlock FontWeight="Bold"
+                       Text="{x:Bind Name}" />
+            <TextBlock Text="{x:Bind Salary}" />
+        </StackPanel>
+    </DataTemplate>
+
+</ResourceDictionary>
