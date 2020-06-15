@@ -20,6 +20,7 @@ This file contains a x:Class attribute in the ResourceDictionary. This class is 
     <DataTemplate x:Key="EmployeeDataTemplate"
                   x:DataType="models:Employee">
         <StackPanel Padding="4"
+                    Loaded="StackPanel_Loaded"
                     Spacing="8">
             <TextBlock FontWeight="Bold"
                        Text="{x:Bind Name}" />
@@ -41,6 +42,11 @@ namespace SampleApp.Views.Resources {
         public DataTemplates() {
             this.InitializeComponent();
         }
+        
+        private void StackPanel_Loaded(object sender, RoutedEventArgs e) {
+            // Some code, this is just an example
+        }
+
     }
 }
 ```
