@@ -2,15 +2,14 @@
                     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:models="using:SampleApp.Models">
-
     <DataTemplate x:Key="EmployeeDataTemplate"
                   x:DataType="models:Employee">
         <StackPanel Padding="4"
+                    Loaded="StackPanel_Loaded"
                     Spacing="8">
             <TextBlock FontWeight="Bold"
                        Text="{x:Bind Name}" />
             <TextBlock Text="{x:Bind Salary}" />
         </StackPanel>
     </DataTemplate>
-
 </ResourceDictionary>

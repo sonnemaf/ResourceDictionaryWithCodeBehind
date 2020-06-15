@@ -3,12 +3,19 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:resources="using:SampleApp.Views.Resources"
       xmlns:vm="using:SampleApp.ViewModels"
       Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
       mc:Ignorable="d">
-
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <resources:DataTemplates />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
     <Grid>
-        <ListView ItemTemplate="{StaticResource EmployeeDataTemplate}"
+        <ListView ItemTemplate="{StaticResource EmployeeDataTemplate}" 
                   ItemsSource="{x:Bind vm:MainViewModel.Current.Employees}" />
     </Grid>
 </Page>

@@ -5,5 +5,9 @@ namespace SampleApp.Views.Resources {
         public DataTemplates() {
             this.InitializeComponent();
         }
+
+        private void StackPanel_Loaded(object sender, RoutedEventArgs e) {
+            // Some code, this is just an example
+        }
     }
 }
