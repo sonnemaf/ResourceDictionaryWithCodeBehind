@@ -9,7 +9,7 @@ This ItemTemplate is published in the [Visual Studio Marketplace](https://market
 This project also contains a sample app which has a *DataTemplates.xaml* ResourceDictionary with a Code-behind.
 
 ## DataTemplates.xaml
-This file contains a x:Class attribute in the ResourceDictionary. This class is defined in the Code-behind. It allowes you to use x:Bind markupextensions and eventhandlers.
+This file contains a x:Class attribute in the ResourceDictionary. This class is defined in the Code-behind. It allowes you to use x:Bind markupextensions and eventhandlers. The StackPanel in the DataTemplate has an Loaded event. The TextBlock use x:Bind databinding.
 
 ```xml
 <ResourceDictionary x:Class="SampleApp.Views.Resources.DataTemplates"
