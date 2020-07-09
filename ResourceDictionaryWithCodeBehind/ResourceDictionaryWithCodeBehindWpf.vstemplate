@@ -1,0 +1,25 @@
+﻿<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+  <TemplateData>
+    <DefaultName>ResourceDictionary.xaml</DefaultName>
+    <Name>Resource Dictionary with Code-behind (WPF)</Name>
+    <Description>An empty, keyed collection of XAML resources with Code-behind which can be used for EventHandlers</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>WPF</ProjectSubType>
+    <AppliesTo>CSharp + WPF</AppliesTo>
+    <SortOrder>99</SortOrder>
+    <Icon Package="{2581426E-BF4F-4A49-A42A-20EF9D51EF49}" ID="4010" />
+    <ShowByDefault>false</ShowByDefault>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <TemplateID>ReflectionIT.CS.WPF.ResourceDictionary</TemplateID>
+    <TargetPlatformName>Windows</TargetPlatformName>
+    <AppIdFilter>blend</AppIdFilter>
+    <LanguageTag>csharp</LanguageTag>
+    <PlatformTag>windows</PlatformTag>
+    <ProjectTypeTag>desktop</ProjectTypeTag>
+  </TemplateData>
+  <TemplateContent>
+    <References />
+    <ProjectItem SubType="" TargetFileName="$fileinputname$.xaml" ReplaceParameters="true">ResourceDictionaryWpf.xaml</ProjectItem>
+    <ProjectItem SubType="" TargetFileName="$fileinputname$.xaml/$fileinputname$.xaml.cs" ReplaceParameters="true">ResourceDictionaryWpf.cs</ProjectItem>
+  </TemplateContent>
+</VSTemplate>

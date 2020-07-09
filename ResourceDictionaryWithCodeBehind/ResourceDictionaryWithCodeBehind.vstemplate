@@ -9,14 +9,13 @@
     <TemplateGroupID>WinRT-Managed-UAP</TemplateGroupID>
     <AppliesTo>CSharp + SharedAssetsProject</AppliesTo>
     <ShowByDefault>false</ShowByDefault>
-    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <NumberOfParentCategoriesToRollUp>2</NumberOfParentCategoriesToRollUp>
     <TemplateID>ReflectionIT.CS.UAP.ResourceDictionary</TemplateID>
     <TargetPlatformName>Windows</TargetPlatformName>
     <AppIdFilter>blend</AppIdFilter>
     <LanguageTag>csharp</LanguageTag>
     <PlatformTag>windows</PlatformTag>
     <ProjectTypeTag>uwp</ProjectTypeTag>
-    <ProjectTypeTag>desktop</ProjectTypeTag>
   </TemplateData>
   <TemplateContent>
     <References />

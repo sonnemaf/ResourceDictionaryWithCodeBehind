@@ -1,0 +1,23 @@
+﻿<Window x:Class="SampleWpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:models="clr-namespace:SampleWpf.Models"
+        Title="MainWindow"
+        Width="800"
+        Height="450"
+        mc:Ignorable="d">
+    <Window.Resources>
+
+        <models:EmployeeList x:Key="SampleData">
+            <models:Employee Name="Fons" Salary="2000" />
+            <models:Employee Name="Jim" Salary="4000" />
+            <models:Employee Name="Ellen" Salary="3000" />
+        </models:EmployeeList>
+
+    </Window.Resources>
+    <Grid Margin="8">
+        <ListBox ItemsSource="{StaticResource SampleData}" />
+    </Grid>
+</Window>

@@ -1,0 +1,14 @@
+﻿<ResourceDictionary x:Class="SampleWpf.Views.Resources.DataTemplates"
+                    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:models="clr-namespace:SampleWpf.Models">
+
+    <DataTemplate DataType="{x:Type models:Employee}">
+        <StackPanel Loaded="StackPanel_Loaded">
+            <TextBlock FontWeight="Bold"
+                       Text="{Binding Path=Name, Mode=OneTime}" />
+            <TextBlock Text="{Binding Path=Salary, Mode=OneTime}" />
+        </StackPanel>
+    </DataTemplate>
+
+</ResourceDictionary>

@@ -55,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="ResourceDictionaryWpf.cs" />
     <None Include="ResourceDictionary.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -64,6 +65,17 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="ResourceDictionary.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <VSTemplate Include="ResourceDictionaryWithCodeBehindWpf.vstemplate">
+      <OutputSubPath>WPF</OutputSubPath>
+    </VSTemplate>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourceDictionaryWpf.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </None>
