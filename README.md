@@ -1,7 +1,7 @@
 # ResourceDictionaryWithCodeBehind
 Visual Studio ItemTemplate for a ResourceDictionary with Code-behind which can be used for x:Bind and EventHandlers
 
-This ItemTemplate is published in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=FonsSonnemans.ResourceDictionaryWithCodeBehindPackage)
+This ItemTemplate is published in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=FonsSonnemans.RDwCB)
 
 ![Add New Item dialog](/AddNewItem.png)
 
