@@ -88,7 +88,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <VSTemplate Include="ResourceDictionaryWithCodeBehindWinUI.vstemplate" />
+    <VSTemplate Include="ResourceDictionaryWithCodeBehindWinUI.vstemplate">
+      <OutputSubPath>WinUI</OutputSubPath>
+    </VSTemplate>
   </ItemGroup>
   <ItemGroup>
     <Content Include="WinUI.Neutral.Cs.ResourceDictionary.ico" />
